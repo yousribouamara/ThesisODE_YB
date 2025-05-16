@@ -5,8 +5,18 @@ import os
 from scipy.integrate import odeint
 from scipy.optimize import curve_fit
 
+"""
+new goals: macrophage dose effect, amounts or cytokine levels
+all fit model...
+justify assumptions
+surface and volume constraints
+error bars
+paper with MP activity to calibrate, 
+in order to make their role stagnant if there are too many MP
+"""
+
 # --- Set path to CSV files ---
-data_path = "/Users/yousribouamara/Downloads/data varady"  # Change to your local path
+data_path = "/Users/yousribouamara/Downloads/data varady"
 
 # --- Define all files ---
 files = {
@@ -63,8 +73,8 @@ for label, filename in files.items():
         print(f"❌ Fit failed for {label}")
 
 # --- Adjustable M1/M2 weighting (20% M1, 80% M2 for now) ---
-wM1 = 0.2
-wM2 = 0.8
+wM1 = 1
+wM2 = 1
 
 # --- Time range for simulation ---
 t_sim = np.linspace(0, 72, 100)
