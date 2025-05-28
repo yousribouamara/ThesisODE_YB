@@ -112,7 +112,7 @@ plt.show()
 # --- STEP 4: Mixed condition with antagonism
 M1_custom = 0.5
 M2_custom = 0.5
-alpha = -0.5  # Tuned antagonism factor
+alpha = -0.5  #Tuned antagonism factor
 
 custom_contexts = {
     "CM only (Mφ alone)":       ("M1 alone CM", "M2 alone CM"),

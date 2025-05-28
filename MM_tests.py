@@ -8,7 +8,7 @@ import os
 # --- Load Data ---
 path = "/Users/yousribouamara/Downloads/data varady"
 data_files = {
-    "231 alone":     "231alone_2.csv",
+    "231 alone":     "231alone2X.csv",
     "231 + M1 CM":   "231M1CM.csv",
     "231 + M1 CC":   "231M1CC.csv",
     "231 + M2 CM":   "231M2CM.csv",
